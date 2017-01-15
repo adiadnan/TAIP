@@ -102,7 +102,7 @@ public class DataFetch {
 		URI uri = new URI("http", baseGeneralSearchLink, path, "zws-id="
 				+ API_KEY + "&zpid=48749425" + "&address=" + address
 				+ "&citystatezip=" + cityzipcode, null);
-		System.out.println("URL " + uri.toString());
+		//System.out.println("URL " + uri.toString());
 		return uri.toString();
 	}
 
@@ -124,9 +124,9 @@ public class DataFetch {
 
 		StringBuilder result = new StringBuilder();
 		String output;
-		System.out.println("Output from Server .... \n");
+		//System.out.println("Output from Server .... \n");
 		while ((output = br.readLine()) != null) {
-			System.out.println(output);
+			//System.out.println(output);
 			result.append(output);
 		}
 
